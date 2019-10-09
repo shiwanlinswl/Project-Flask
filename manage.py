@@ -1,7 +1,6 @@
 from flask_migrate import Migrate, MigrateCommand
-from info import create_app, db, redis_store
+from info import create_app, db
 from flask_script import Manager
-from config import config_dict
 
 # 1.创建app对象
 app = create_app("development")
