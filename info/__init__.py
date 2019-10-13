@@ -68,4 +68,7 @@ def create_app(config_name):
     # 5.借助Session调整flask.session的存储位置到redis中存储
     Session(app)
 
+    from info.modules.index import index_bp
+    app.register_blueprint(index_bp)
+
     return app

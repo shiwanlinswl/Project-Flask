@@ -14,12 +14,7 @@ Migrate(app, db)
 # 8.添加迁移命令
 manage.add_command("db", MigrateCommand)
 
-
-@app.route('/')
-def index():
-    return 'Hello World'
-
-
 if __name__ == '__main__':
     # 9.使用manage对象启动flask项目
+    # print(app.url_map)
     manage.run()
