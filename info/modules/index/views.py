@@ -1,6 +1,7 @@
 from . import index_bp
+from flask import jsonify
 
 
 @index_bp.route('/')
 def index():
-    return 'Hello World'
+    return jsonify(msg="Hello World")

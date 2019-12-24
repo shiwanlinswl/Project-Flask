@@ -1,4 +1,5 @@
 from redis import StrictRedis
+from info.utils.tasks import create_tasks
 import logging
 
 
@@ -9,9 +10,17 @@ class Config(object):
     DEBUG = True
 
     # mysql连接配置
-    SQLALCHEMY_DATABASE_URI = "mysql://root:mysql@93.179.119.153:3306/info"
+    SQLALCHEMY_DATABASE_URI = "mysql://root:shi930718@93.179.119.153:3306/info"
     # 开启数据库跟踪模式
     SQLALCHEMY_TRACK_MODIFICATIONS = True
+
+    JOBS = [{
+        'id': 'job1',
+        'func': create_tasks,
+        'args': '',
+        'trigger': 'corn',
+        'seconds': 15
+    }]
 
     # redis连接配置
     REDIS_HOST = '93.179.119.153'

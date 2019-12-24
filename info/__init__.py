@@ -63,12 +63,14 @@ def create_app(config_name):
     # 1.提取cookie中的csrf_token的值
     # 2.提取表单中的csrf_token的值,或ajax请求中的X-CSRFToken的值
     # 3.对比这两个值是否相等，相等则校验通过
-    CSRFProtect(app)
+    # CSRFProtect(app)
 
     # 5.借助Session调整flask.session的存储位置到redis中存储
-    Session(app)
+    # Session(app)
 
     from info.modules.index import index_bp
+
+    # 注册index蓝图对象
     app.register_blueprint(index_bp)
 
     return app
