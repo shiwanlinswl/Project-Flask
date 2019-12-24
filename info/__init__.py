@@ -7,6 +7,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from flask_session import Session
 
+# 只是申明db对象，并未做真是数据库初始化操作
 db = SQLAlchemy()
 
 # # type:StrictRedis 提前声明redis_store数据类型
@@ -68,6 +69,7 @@ def create_app(config_name):
     # 5.借助Session调整flask.session的存储位置到redis中存储
     # Session(app)
 
+    # 防止出现循环导入问题,在工厂方法中延迟导入蓝图对象
     from info.modules.index import index_bp
 
     # 注册index蓝图对象

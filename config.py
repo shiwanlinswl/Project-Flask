@@ -29,7 +29,7 @@ class Config(object):
     # 配置密钥
     SECRET_KEY = 'AGASDGADS214GAGQHKHGJHRE5634GNMWTY1G'
 
-    # 将flask中的session存储到redis数据库中
+    # 将flask中的session(默认是存储到flask内存中)存储到redis数据库中
     # 指定存储的数据库类型
     SESSION_TYPE = "redis"
 
