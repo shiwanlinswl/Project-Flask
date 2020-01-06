@@ -4,6 +4,7 @@ from flask_wtf import CSRFProtect
 from redis import StrictRedis
 from config import config_dict
 import logging
+import datetime
 from logging.handlers import RotatingFileHandler
 from flask_session import Session
 
@@ -22,11 +23,13 @@ def write_log(config_class):
     """
     logging.basicConfig(level=config_class.LOG_LEVEL)  # 调试DEBUG级
 
+    file_name = datetime.datetime.now().strftime("%Y-%m-%d") + ".log"
+
     # 创建日志记录器，指明日志的路径，文件最大大小，文件上限
-    file_log_handler = RotatingFileHandler("logs/log", maxBytes=1024 * 1024 * 100, backupCount=1)
+    file_log_handler = RotatingFileHandler("logs/" + file_name, maxBytes=1024 * 1024 * 100, backupCount=1)
 
     # 设置日志等级
-    formatter = logging.Formatter('%(levelname)s %(filename)s: %(lineno)d %(message)s')
+    formatter = logging.Formatter('%(asctime)s %(levelname)s %(filename)s: %(lineno)d %(message)s')
 
     # 为日志器设置日志格式
     file_log_handler.setFormatter(formatter)

@@ -1,7 +1,7 @@
 from flask_migrate import Migrate, MigrateCommand
 from info import create_app, db
 from flask_script import Manager
-from info.models import User
+# from info.models import User
 
 
 # 创建app对象
