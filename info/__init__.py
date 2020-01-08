@@ -5,7 +5,7 @@ from redis import StrictRedis
 from config import config_dict
 import logging
 import datetime
-from logging.handlers import RotatingFileHandler
+from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
 from flask_session import Session
 
 # 只是申明db对象，并未做真是数据库初始化操作
@@ -27,6 +27,9 @@ def write_log(config_class):
 
     # 创建日志记录器，指明日志的路径，文件最大大小，文件上限
     file_log_handler = RotatingFileHandler("logs/" + file_name, maxBytes=1024 * 1024 * 100, backupCount=1)
+
+    # 定时生成日志
+    # file_log_handler = TimedRotatingFileHandler("logs/" + file_name, when="D", interval=1, encoding="utf8", backupCount=1)
 
     # 设置日志等级
     formatter = logging.Formatter('%(asctime)s %(levelname)s %(filename)s: %(lineno)d %(message)s')
