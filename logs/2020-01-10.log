@@ -46,3 +46,101 @@
 2020-01-10 22:24:38,717 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 22:24:38] "GET /static/news/images/clock.png HTTP/1.1" 200 -
 2020-01-10 22:24:38,721 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 22:24:38] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
 2020-01-10 22:24:46,908 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 22:24:46] "GET / HTTP/1.1" 200 -
+2020-01-10 23:35:08,275 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:35:08] "GET / HTTP/1.1" 200 -
+2020-01-10 23:35:11,652 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:35:11] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-10 23:36:03,061 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:03] "GET / HTTP/1.1" 200 -
+2020-01-10 23:36:38,563 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:38] "GET / HTTP/1.1" 200 -
+2020-01-10 23:36:54,520 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET / HTTP/1.1" 200 -
+2020-01-10 23:36:54,591 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-10 23:36:54,598 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-10 23:36:54,603 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-10 23:36:54,607 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-10 23:36:54,610 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-10 23:36:54,616 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-10 23:36:54,619 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-10 23:36:54,632 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-10 23:36:54,635 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-10 23:36:54,660 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-10 23:36:54,705 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-10 23:36:54,710 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:54] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-10 23:36:55,047 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:36:55] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:38:03,776 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET / HTTP/1.1" 200 -
+2020-01-10 23:38:03,817 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-10 23:38:03,821 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-10 23:38:03,826 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-10 23:38:03,834 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-10 23:38:03,837 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-10 23:38:03,841 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-10 23:38:03,844 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-10 23:38:03,868 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-10 23:38:03,871 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-10 23:38:03,889 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-10 23:38:03,926 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-10 23:38:03,930 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:03] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-10 23:38:04,190 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:04] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:38:39,112 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:39] "GET / HTTP/1.1" 200 -
+2020-01-10 23:38:39,423 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:39] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:38:42,630 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:42] "GET / HTTP/1.1" 200 -
+2020-01-10 23:38:42,932 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:38:42] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:39:08,774 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET / HTTP/1.1" 200 -
+2020-01-10 23:39:08,807 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-10 23:39:08,813 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-10 23:39:08,817 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-10 23:39:08,824 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-10 23:39:08,831 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-10 23:39:08,834 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-10 23:39:08,841 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-10 23:39:08,859 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-10 23:39:08,862 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-10 23:39:08,876 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-10 23:39:08,910 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-10 23:39:08,912 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:08] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-10 23:39:09,148 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:09] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:39:25,152 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET / HTTP/1.1" 200 -
+2020-01-10 23:39:25,197 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-10 23:39:25,200 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-10 23:39:25,205 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-10 23:39:25,212 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-10 23:39:25,216 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-10 23:39:25,219 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-10 23:39:25,222 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-10 23:39:25,236 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-10 23:39:25,240 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-10 23:39:25,256 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-10 23:39:25,290 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-10 23:39:25,293 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-10 23:39:25,485 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:25] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:39:28,863 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:28] "GET / HTTP/1.1" 200 -
+2020-01-10 23:39:29,182 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:39:29] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:40:41,402 INFO _internal.py: 122  * Restarting with stat
+2020-01-10 23:40:42,522 WARNING _internal.py: 122  * Debugger is active!
+2020-01-10 23:40:42,537 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-10 23:40:42,552 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-10 23:40:44,780 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:40:44] "GET / HTTP/1.1" 200 -
+2020-01-10 23:40:49,895 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:40:49] "GET / HTTP/1.1" 200 -
+2020-01-10 23:40:50,242 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:40:50] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:41:11,410 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:41:11] "GET / HTTP/1.1" 200 -
+2020-01-10 23:41:11,764 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:41:11] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:42:38,684 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET / HTTP/1.1" 200 -
+2020-01-10 23:42:38,725 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-10 23:42:38,729 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-10 23:42:38,734 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-10 23:42:38,742 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-10 23:42:38,745 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-10 23:42:38,749 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-10 23:42:38,753 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-10 23:42:38,772 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-10 23:42:38,777 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-10 23:42:38,797 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-10 23:42:38,841 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-10 23:42:38,845 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:38] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-10 23:42:39,074 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:39] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-10 23:42:52,656 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:52] "GET /passport/image_code?code_id=1b4f7828-28ee-42aa-90f1-f47600448b6e HTTP/1.1" 404 -
+2020-01-10 23:42:52,660 INFO _internal.py: 122 127.0.0.1 - - [10/Jan/2020 23:42:52] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-10 23:48:22,450 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\__init__.py', reloading
+2020-01-10 23:48:22,510 INFO _internal.py: 122  * Restarting with stat
+2020-01-10 23:48:23,560 WARNING _internal.py: 122  * Debugger is active!
+2020-01-10 23:48:23,570 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-10 23:48:23,590 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-10 23:49:06,635 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-10 23:49:06,700 INFO _internal.py: 122  * Restarting with stat
