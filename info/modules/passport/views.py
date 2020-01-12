@@ -1,8 +1,9 @@
 from . import passport_bp
-from flask import request, current_app, abort, make_response
+from flask import request, current_app, abort, make_response, jsonify
 from info.utils.captcha.captcha import captcha
 from info import redis_store
 from info import constants
+from info.response_code import *
 
 
 # get请求地址 url="/passport/image_code?code_id=UUID"
@@ -25,6 +26,7 @@ def get_image_code():
         redis_store.setex("CODE_{}".format(code_id), constants.IMAGE_CODE_REDIS_EXPIRES, real_image_code)
     except Exception as e:
         current_app.logger.error(e)
+        return make_response(jsonify(errno=RET.DATAERR, errmsg="保存图片验证码失败"))
 
     # 4.返回:相应验证码图片,返回的数据是二进制格式，不一定能兼容所有的浏览器
     response = make_response(image_data)
