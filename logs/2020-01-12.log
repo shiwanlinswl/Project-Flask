@@ -1,0 +1,217 @@
+2020-01-12 08:26:37,589 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 08:26:38,389 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 08:26:38,427 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 08:26:38,429 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 08:26:41,556 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET / HTTP/1.1" 200 -
+2020-01-12 08:26:41,604 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-12 08:26:41,607 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-12 08:26:41,631 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-12 08:26:41,654 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-12 08:26:41,673 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-12 08:26:41,698 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-12 08:26:41,705 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-12 08:26:41,710 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-12 08:26:41,718 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-12 08:26:41,725 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-12 08:26:41,789 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-12 08:26:41,792 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:41] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-12 08:26:45,324 ERROR views.py: 28 DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+2020-01-12 08:26:45,325 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:45] "GET /passport/image_code?code_id=577afaea-7e54-4516-952e-2a53a04fa43a HTTP/1.1" 200 -
+2020-01-12 08:26:45,330 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:45] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-12 08:26:49,872 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:49] "GET / HTTP/1.1" 200 -
+2020-01-12 08:26:50,021 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:50] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:26:57,064 ERROR views.py: 28 DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+2020-01-12 08:26:57,066 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:57] "GET /passport/image_code?code_id=476c0c1a-5c83-436e-983e-d1834eed0f7b HTTP/1.1" 200 -
+2020-01-12 08:26:58,974 ERROR views.py: 28 DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+2020-01-12 08:26:58,979 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:26:58] "GET /passport/image_code?code_id=69e91719-c3d6-46a2-b045-51be5a2ba49f HTTP/1.1" 200 -
+2020-01-12 08:27:00,198 ERROR views.py: 28 DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+2020-01-12 08:27:00,198 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:27:00] "GET /passport/image_code?code_id=7daf8c1f-7a61-43f2-b684-2b7dd5d8907f HTTP/1.1" 200 -
+2020-01-12 08:27:49,721 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:27:49] "GET / HTTP/1.1" 200 -
+2020-01-12 08:27:50,038 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:27:50] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:28:05,449 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET / HTTP/1.1" 200 -
+2020-01-12 08:28:05,478 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-12 08:28:05,481 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-12 08:28:05,486 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-12 08:28:05,492 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-12 08:28:05,497 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-12 08:28:05,500 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-12 08:28:05,507 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-12 08:28:05,540 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-12 08:28:05,543 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-12 08:28:05,546 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-12 08:28:05,575 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-12 08:28:05,577 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-12 08:28:05,779 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:05] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:28:10,091 ERROR views.py: 28 DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+2020-01-12 08:28:10,091 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:10] "GET /passport/image_code?code_id=a567cbff-b22a-4012-a14a-2bf26163940a HTTP/1.1" 200 -
+2020-01-12 08:28:10,094 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:10] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-12 08:28:13,798 ERROR views.py: 28 Error while reading from socket: (10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)
+2020-01-12 08:28:13,922 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:13] "GET /passport/image_code?code_id=e60ae8f6-8147-4777-af4e-67ea709a57a5 HTTP/1.1" 200 -
+2020-01-12 08:28:26,798 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 08:28:27,603 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 08:28:27,618 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 08:28:27,629 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 08:28:31,086 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:31] "GET / HTTP/1.1" 200 -
+2020-01-12 08:28:34,138 ERROR views.py: 28 DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+2020-01-12 08:28:34,139 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:34] "GET /passport/image_code?code_id=e3dd9aad-4c27-4675-a874-b0937138f90f HTTP/1.1" 200 -
+2020-01-12 08:28:36,163 ERROR views.py: 28 DENIED Redis is running in protected mode because protected mode is enabled, no bind address was specified, no authentication password is requested to clients. In this mode connections are only accepted from the loopback interface. If you want to connect from external computers to Redis you may adopt one of the following solutions: 1) Just disable protected mode sending the command 'CONFIG SET protected-mode no' from the loopback interface by connecting to Redis from the same host the server is running, however MAKE SURE Redis is not publicly accessible from internet if you do so. Use CONFIG REWRITE to make this change permanent. 2) Alternatively you can just disable the protected mode by editing the Redis configuration file, and setting the protected mode option to 'no', and then restarting the server. 3) If you started the server manually just for testing, restart it with the '--protected-mode no' option. 4) Setup a bind address or an authentication password. NOTE: You only need to do one of the above things in order for the server to start accepting connections from the outside.
+2020-01-12 08:28:36,163 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:28:36] "GET /passport/image_code?code_id=1aae57b2-370f-412c-9fc1-ffeab8bb5398 HTTP/1.1" 200 -
+2020-01-12 08:29:35,811 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:35] "GET / HTTP/1.1" 200 -
+2020-01-12 08:29:35,812 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:35] "GET / HTTP/1.1" 200 -
+2020-01-12 08:29:36,094 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:36] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:29:49,173 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET / HTTP/1.1" 200 -
+2020-01-12 08:29:49,201 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-12 08:29:49,204 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-12 08:29:49,208 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-12 08:29:49,215 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-12 08:29:49,218 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-12 08:29:49,221 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-12 08:29:49,224 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-12 08:29:49,245 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-12 08:29:49,248 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-12 08:29:49,263 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-12 08:29:49,288 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-12 08:29:49,291 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-12 08:29:49,489 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:29:49] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:30:28,671 ERROR views.py: 28 Error while reading from socket: (10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)
+2020-01-12 08:30:28,673 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:30:28] "GET /passport/image_code?code_id=c14d36e5-85d5-48fe-8ba4-c98b4faa825b HTTP/1.1" 200 -
+2020-01-12 08:30:28,680 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:30:28] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-12 08:43:11,887 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 08:43:12,667 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 08:43:12,677 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 08:43:12,687 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 08:43:16,206 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:43:16] "GET / HTTP/1.1" 200 -
+2020-01-12 08:43:22,659 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:43:22] "GET /passport/image_code?code_id=66a8c49d-c029-4e70-acc8-9b35a8624736 HTTP/1.1" 200 -
+2020-01-12 08:43:31,135 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:43:31] "GET /passport/image_code?code_id=86254e74-9d81-4913-8adf-8f974ecf5387 HTTP/1.1" 200 -
+2020-01-12 08:43:32,660 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:43:32] "GET /passport/image_code?code_id=ac109143-669f-4027-8ee2-3e12fa3500ae HTTP/1.1" 200 -
+2020-01-12 08:43:58,864 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:43:58] "GET /passport/image_code?code_id=1a521c6f-304a-4362-8902-3a632bc548ee HTTP/1.1" 200 -
+2020-01-12 08:43:59,728 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:43:59] "GET /passport/image_code?code_id=5ce6e1af-80ff-4456-9f58-29a295015b66 HTTP/1.1" 200 -
+2020-01-12 08:44:01,605 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:01] "GET / HTTP/1.1" 200 -
+2020-01-12 08:44:01,764 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:01] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:44:03,280 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:03] "GET /passport/image_code?code_id=6267a161-ffb7-49b6-8ef1-c07f8dd3a7d6 HTTP/1.1" 200 -
+2020-01-12 08:44:04,210 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:04] "GET /passport/image_code?code_id=2eb86011-588e-4c66-9133-2b2a7f10c1e0 HTTP/1.1" 200 -
+2020-01-12 08:44:04,961 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:04] "GET /passport/image_code?code_id=77d3fbfd-5d5a-449e-8334-9a3accd555e7 HTTP/1.1" 200 -
+2020-01-12 08:44:10,259 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 08:44:11,071 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 08:44:11,084 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 08:44:11,093 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 08:44:14,895 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:14] "GET / HTTP/1.1" 200 -
+2020-01-12 08:44:21,442 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:21] "GET / HTTP/1.1" 200 -
+2020-01-12 08:44:21,782 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:21] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:44:33,891 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET / HTTP/1.1" 200 -
+2020-01-12 08:44:33,923 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-12 08:44:33,930 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-12 08:44:33,937 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-12 08:44:33,943 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-12 08:44:33,946 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-12 08:44:33,949 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-12 08:44:33,954 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-12 08:44:33,976 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-12 08:44:33,980 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-12 08:44:33,996 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:33] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-12 08:44:34,027 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:34] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-12 08:44:34,031 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:34] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-12 08:44:34,259 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:34] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 08:44:37,849 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:37] "GET /passport/image_code?code_id=d18d9380-cdb3-4cab-98b2-1552ad43dc37 HTTP/1.1" 200 -
+2020-01-12 08:44:37,851 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:37] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-12 08:44:40,045 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:44:40] "GET /passport/image_code?code_id=b7da4658-a646-4780-8657-a210acb629c8 HTTP/1.1" 200 -
+2020-01-12 08:47:08,250 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:47:08] "GET / HTTP/1.1" 200 -
+2020-01-12 08:47:10,903 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 08:47:10] "GET /passport/image_code?code_id=e0121a5d-44a7-492f-8287-c188855c2d45 HTTP/1.1" 200 -
+2020-01-12 09:14:06,467 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-12 09:14:06,535 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 09:51:27,108 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 09:51:27,918 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 09:51:27,928 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 09:51:27,938 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 09:51:35,351 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 09:51:35] "GET / HTTP/1.1" 200 -
+2020-01-12 09:51:39,930 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 09:51:39] "GET /passport/image_code?code_id=147c7432-906d-4b67-8aaa-e124155dde9b HTTP/1.1" 200 -
+2020-01-12 09:54:09,722 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-12 09:54:09,803 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 09:54:10,614 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 09:54:10,629 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 09:54:10,645 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 09:54:18,129 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-12 09:54:18,202 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 09:54:19,115 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 09:54:19,132 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 09:54:19,134 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 11:53:01,573 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 11:53:02,440 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 11:53:02,450 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 11:53:02,460 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 12:10:25,778 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 12:10:26,602 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 12:10:26,612 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 12:10:26,620 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 12:10:28,564 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:10:28] "GET / HTTP/1.1" 200 -
+2020-01-12 12:11:22,909 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:22] "GET / HTTP/1.1" 200 -
+2020-01-12 12:11:23,224 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:23] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 12:11:25,523 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:25] "GET /passport/image_code?code_id=0639aa1d-a063-4805-af09-9246c76ddc7f HTTP/1.1" 200 -
+2020-01-12 12:11:33,630 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET / HTTP/1.1" 200 -
+2020-01-12 12:11:33,652 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-12 12:11:33,658 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-12 12:11:33,662 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-12 12:11:33,667 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-12 12:11:33,673 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-12 12:11:33,677 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-12 12:11:33,680 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-12 12:11:33,697 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-12 12:11:33,700 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-12 12:11:33,715 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-12 12:11:33,743 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-12 12:11:33,746 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-12 12:11:33,963 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:33] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 12:11:37,674 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:37] "GET /passport/image_code?code_id=1c8ab863-4317-4c21-a2f8-0cd09b453ec0 HTTP/1.1" 200 -
+2020-01-12 12:11:37,676 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:37] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-12 12:11:45,391 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:11:45] "GET /passport/image_code?code_id=8bbf42ea-9647-4f67-a6c0-162d4f6ddb75 HTTP/1.1" 200 -
+2020-01-12 12:17:10,969 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 12:17:11,933 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 12:17:11,946 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 12:17:11,956 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 12:17:12,041 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:17:12] "GET / HTTP/1.1" 200 -
+2020-01-12 12:17:12,480 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:17:12] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 12:17:35,084 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:17:35] "GET / HTTP/1.1" 200 -
+2020-01-12 12:17:37,367 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:17:37] "GET /passport/image_code?code_id=c9dcc835-cd77-4590-97cb-5306e259484e HTTP/1.1" 200 -
+2020-01-12 12:17:49,733 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:17:49] "GET /passport/image_code?code_id=f95a178d-37c9-4df2-a41a-bcbae93b6409 HTTP/1.1" 200 -
+2020-01-12 12:20:51,179 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 12:20:52,003 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 12:20:52,016 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 12:20:52,024 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 12:25:18,958 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:25:18] "GET / HTTP/1.1" 200 -
+2020-01-12 12:25:26,510 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:25:26] "GET /passport/image_code?code_id=0dfdb66a-a4b0-4e91-830b-57637c39815c HTTP/1.1" 200 -
+2020-01-12 12:25:46,385 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:25:46] "GET /passport/image_code?code_id=b5ddd379-b11e-4e37-9bb3-46505144c151 HTTP/1.1" 200 -
+2020-01-12 12:25:46,629 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:25:46] "GET /passport/image_code?code_id=6209d341-2321-4eab-8a17-59d901fc82c6 HTTP/1.1" 200 -
+2020-01-12 12:25:48,181 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:25:48] "GET /passport/image_code?code_id=8874f4de-45de-4821-86a2-4ef277e91295 HTTP/1.1" 200 -
+2020-01-12 12:26:04,994 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:04] "GET / HTTP/1.1" 200 -
+2020-01-12 12:26:05,024 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+2020-01-12 12:26:05,033 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/css/main.css HTTP/1.1" 200 -
+2020-01-12 12:26:05,037 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+2020-01-12 12:26:05,041 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/js/main.js HTTP/1.1" 200 -
+2020-01-12 12:26:05,048 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/js/index.js HTTP/1.1" 200 -
+2020-01-12 12:26:05,051 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+2020-01-12 12:26:05,054 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+2020-01-12 12:26:05,078 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+2020-01-12 12:26:05,081 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/images/person.png HTTP/1.1" 200 -
+2020-01-12 12:26:05,103 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+2020-01-12 12:26:05,132 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+2020-01-12 12:26:05,134 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+2020-01-12 12:26:05,334 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:05] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 12:26:08,246 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:08] "GET /passport/image_code?code_id=2b4ec324-871d-40fb-a508-04bc98e48ea5 HTTP/1.1" 200 -
+2020-01-12 12:26:08,250 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:08] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+2020-01-12 12:26:22,359 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:22] "GET /passport/image_code?code_id=05ac0f7b-7f85-477d-a888-dd08b4ca50f1 HTTP/1.1" 200 -
+2020-01-12 12:26:29,109 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:29] "GET /passport/image_code?code_id=25da7c60-e912-4a8c-8f94-8028eb6cd0b2 HTTP/1.1" 200 -
+2020-01-12 12:26:30,416 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:30] "GET /passport/image_code?code_id=c261fb35-1427-422c-993e-62e2fe904ffb HTTP/1.1" 200 -
+2020-01-12 12:26:39,115 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:39] "GET /passport/image_code?code_id=36114634-3557-4008-919a-0d92af824ba8 HTTP/1.1" 200 -
+2020-01-12 12:26:50,347 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:26:50] "POST /passport/sms_code HTTP/1.1" 200 -
+2020-01-12 12:27:05,032 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:27:05] "POST /passport/sms_code HTTP/1.1" 200 -
+2020-01-12 12:27:59,431 INFO _internal.py: 122  * Restarting with stat
+2020-01-12 12:28:00,268 WARNING _internal.py: 122  * Debugger is active!
+2020-01-12 12:28:00,282 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-12 12:28:00,291 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-12 12:28:06,728 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:28:06] "GET / HTTP/1.1" 200 -
+2020-01-12 12:28:09,003 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:28:09] "GET /passport/image_code?code_id=c038bba4-112e-45b9-af7c-37f030a86ca0 HTTP/1.1" 200 -
+2020-01-12 12:28:20,280 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:28:20] "GET / HTTP/1.1" 200 -
+2020-01-12 12:28:20,411 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:28:20] "GET /favicon.ico HTTP/1.1" 200 -
+2020-01-12 12:28:23,939 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:28:23] "GET /passport/image_code?code_id=992cd7fa-3111-4754-a01a-1d8dae93a807 HTTP/1.1" 200 -
+2020-01-12 12:28:43,316 INFO views.py: 84 000121
+2020-01-12 12:28:44,208 INFO _internal.py: 122 127.0.0.1 - - [12/Jan/2020 12:28:44] "POST /passport/sms_code HTTP/1.1" 200 -
