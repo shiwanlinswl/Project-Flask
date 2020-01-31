@@ -1,0 +1,257 @@
+2020-01-31 10:22:16,277 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:22:17,294 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:22:17,308 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:22:17,326 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:22:30,206 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,274 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,299 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,320 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,343 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,385 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,400 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,405 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,408 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,415 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,438 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,455 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,458 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-01-31 10:22:30,747 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:30] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 10:22:35,485 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:35] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+2020-01-31 10:22:38,403 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:22:38,403 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:38] "[37mGET /passport/image_code?code_id=d5324362-c9f6-4a63-8136-bc63500f52e5 HTTP/1.1[0m" 200 -
+2020-01-31 10:22:41,120 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:22:41,121 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:41] "[37mGET /passport/image_code?code_id=d9537da7-7ac2-4afc-873b-3fc0aa0fad02 HTTP/1.1[0m" 200 -
+2020-01-31 10:22:41,986 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:22:41,986 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:41] "[37mGET /passport/image_code?code_id=fd0892a9-9501-48f8-9dad-3d5962e35cc5 HTTP/1.1[0m" 200 -
+2020-01-31 10:22:52,881 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:22:52,882 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:52] "[37mGET /passport/image_code?code_id=9d43ae2a-1872-47f7-a5b4-8aa8429d71cb HTTP/1.1[0m" 200 -
+2020-01-31 10:22:53,860 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:22:53,861 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:53] "[37mGET /passport/image_code?code_id=fe3d6f22-d452-48b4-ac48-f183ab45de55 HTTP/1.1[0m" 200 -
+2020-01-31 10:22:54,953 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:54] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:22:55,136 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:55] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 10:22:56,677 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:22:56,677 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:22:56] "[37mGET /passport/image_code?code_id=c506036a-6429-4990-95f1-f039a65366b3 HTTP/1.1[0m" 200 -
+2020-01-31 10:23:02,321 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:02] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:23:02,720 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,635 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,676 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,680 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,686 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,692 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,697 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,701 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,704 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,730 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,736 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,743 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,797 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-01-31 10:23:18,802 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:18] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-01-31 10:23:19,077 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:19] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 10:23:25,402 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:25,402 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:25] "[37mGET /passport/image_code?code_id=714c741e-1742-4581-b48c-0ff6b61f26cf HTTP/1.1[0m" 200 -
+2020-01-31 10:23:25,405 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:25] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+2020-01-31 10:23:29,709 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:29,710 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:29] "[37mGET /passport/image_code?code_id=287e0d53-0a54-431a-8d25-1b883da265fe HTTP/1.1[0m" 200 -
+2020-01-31 10:23:43,891 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:43,892 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:43] "[37mGET /passport/image_code?code_id=29897df0-42e7-43a2-8341-98af81ab7c59 HTTP/1.1[0m" 200 -
+2020-01-31 10:23:51,240 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:51,241 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:51] "[37mGET /passport/image_code?code_id=de04e0ba-7553-4c4d-96d9-e827c44e18e1 HTTP/1.1[0m" 200 -
+2020-01-31 10:23:51,851 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:51,852 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:51] "[37mGET /passport/image_code?code_id=fd51c9f8-7019-41c6-857a-079e24afee27 HTTP/1.1[0m" 200 -
+2020-01-31 10:23:52,363 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:52,364 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:52] "[37mGET /passport/image_code?code_id=3f2e2a9f-7d7c-467d-abe2-52db276f6326 HTTP/1.1[0m" 200 -
+2020-01-31 10:23:57,266 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:57,267 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:57] "[37mGET /passport/image_code?code_id=a8bc95e0-086f-4b3c-b29d-95a4c677b26a HTTP/1.1[0m" 200 -
+2020-01-31 10:23:57,897 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:57,898 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:57] "[37mGET /passport/image_code?code_id=7d1586d5-f99f-4663-b13a-425b8d62418a HTTP/1.1[0m" 200 -
+2020-01-31 10:23:58,260 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:58,260 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:58] "[37mGET /passport/image_code?code_id=b4f78b06-0302-43d7-becf-9517507a7c12 HTTP/1.1[0m" 200 -
+2020-01-31 10:23:58,443 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:58,444 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:58] "[37mGET /passport/image_code?code_id=15acd112-5e2a-4db3-a621-b7d6618c60ea HTTP/1.1[0m" 200 -
+2020-01-31 10:23:58,637 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:23:58,638 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:23:58] "[37mGET /passport/image_code?code_id=8645be8d-ff97-4844-8183-76381faec300 HTTP/1.1[0m" 200 -
+2020-01-31 10:24:03,890 ERROR views.py: 33 MISCONF Redis is configured to save RDB snapshots, but it is currently not able to persist on disk. Commands that may modify the data set are disabled, because this instance is configured to report errors during writes if RDB snapshotting fails (stop-writes-on-bgsave-error option). Please check the Redis logs for details about the RDB error.
+2020-01-31 10:24:03,891 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:24:03] "[37mGET /passport/image_code?code_id=9108620b-9d45-45d8-97ce-3fe5d90bb6a7 HTTP/1.1[0m" 200 -
+2020-01-31 10:29:20,812 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:29:21,762 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:29:21,776 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:29:21,785 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:29:23,580 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:23] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:29:28,446 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:28] "[37mGET /passport/image_code?code_id=4bcfa346-1aea-47f9-93a5-6ba95d9cd733 HTTP/1.1[0m" 200 -
+2020-01-31 10:29:34,031 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:34] "[37mGET /passport/image_code?code_id=7b33bc35-17b1-4561-8e06-67e7e0f5dd6f HTTP/1.1[0m" 200 -
+2020-01-31 10:29:39,944 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:39] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:29:40,410 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:40] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,718 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,752 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,847 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,867 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,889 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,908 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,923 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,934 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,939 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,950 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,973 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-01-31 10:29:45,994 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:45] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-01-31 10:29:46,003 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:46] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-01-31 10:29:46,248 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:46] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 10:29:50,689 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:50] "[37mGET /passport/image_code?code_id=c21071d0-55e0-42d4-aa8f-8115966c5542 HTTP/1.1[0m" 200 -
+2020-01-31 10:29:50,701 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:50] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+2020-01-31 10:29:52,843 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:29:52] "[37mGET /passport/image_code?code_id=fb1c2370-0840-42a4-b406-584a09372256 HTTP/1.1[0m" 200 -
+2020-01-31 10:36:31,688 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:36:31] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 10:36:32,001 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:36:32] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 10:36:33,746 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:36:33] "[37mGET /passport/image_code?code_id=50701963-99f4-4c22-835a-8a262a4a4aa7 HTTP/1.1[0m" 200 -
+2020-01-31 10:36:35,467 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:36:35] "[37mGET /passport/image_code?code_id=f785f2db-5d10-4cde-a210-a18c3ff4f287 HTTP/1.1[0m" 200 -
+2020-01-31 10:36:41,081 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 10:36:41] "[37mGET /passport/image_code?code_id=d82fb731-5211-400a-9e3d-35f57fcf9e18 HTTP/1.1[0m" 200 -
+2020-01-31 10:39:32,509 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 10:39:32,667 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:39:33,933 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:39:33,955 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:39:33,967 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:39:41,501 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 10:39:41,615 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:39:42,768 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:39:42,781 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:39:42,791 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:40:56,673 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 10:40:56,797 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:40:58,213 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:40:58,226 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:40:58,235 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:47:01,810 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 10:47:01,907 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:47:02,863 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:47:02,877 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:47:02,886 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:48:16,871 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 10:48:16,979 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:48:17,955 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:48:17,968 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:48:17,978 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:48:51,276 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 10:48:51,365 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:48:52,298 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:48:52,311 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:48:52,320 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:49:56,797 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 10:49:56,902 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:49:57,885 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:49:57,902 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:49:57,911 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:51:00,224 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\models.py', reloading
+2020-01-31 10:51:00,329 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:51:01,354 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:51:01,367 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:51:01,377 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 10:51:49,222 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\models.py', reloading
+2020-01-31 10:51:49,341 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 10:51:50,444 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 10:51:50,457 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 10:51:50,467 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:06:12,662 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\models.py', reloading
+2020-01-31 11:06:12,750 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:06:13,643 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 11:06:13,656 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 11:06:13,665 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:06:55,510 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 11:06:55,603 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:06:56,527 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 11:06:56,543 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 11:06:56,552 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:09:02,151 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\models.py', reloading
+2020-01-31 11:09:02,250 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:09:03,271 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 11:09:03,286 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 11:09:03,295 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:12:30,861 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\models.py', reloading
+2020-01-31 11:12:30,953 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:12:31,897 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 11:12:31,910 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 11:12:31,920 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:13:45,009 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\models.py', reloading
+2020-01-31 11:13:45,129 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:13:46,066 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 11:13:46,080 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 11:13:46,092 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:14:07,561 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\passport\\views.py', reloading
+2020-01-31 11:14:07,681 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:30:38,519 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:30:39,459 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 11:30:39,472 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 11:30:39,480 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:30:42,147 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:30:42] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:30:54,853 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:30:54] "[37mGET /passport/image_code?code_id=1376df94-404a-4c02-9506-6c3a83a3097f HTTP/1.1[0m" 200 -
+2020-01-31 11:30:59,602 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:30:59] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:30:59,742 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:30:59] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:31:05,671 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:05] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:31:06,016 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:06] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,764 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,804 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,810 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,813 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,818 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,821 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,827 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,830 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,851 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,855 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,871 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,903 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:10,906 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:10] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:11,151 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:11] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:31:13,969 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:13] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:31:14,271 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:14] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,088 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,120 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,126 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,134 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,141 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,148 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,157 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,160 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,177 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,179 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,195 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,219 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,224 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:21,434 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:21] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:31:28,995 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:28] "[37mGET /passport/image_code?code_id=3499b040-a632-45c9-805f-47cc53c7cd40 HTTP/1.1[0m" 200 -
+2020-01-31 11:31:28,997 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:28] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+2020-01-31 11:31:44,290 INFO views.py: 86 007831
+2020-01-31 11:31:45,395 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:31:45] "[37mPOST /passport/sms_code HTTP/1.1[0m" 200 -
+2020-01-31 11:32:12,061 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:32:12] "[37mPOST /passport/register HTTP/1.1[0m" 200 -
+2020-01-31 11:32:24,472 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:32:24] "[37mPOST /passport/register HTTP/1.1[0m" 200 -
+2020-01-31 11:34:13,817 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:34:13] "[37mPOST /passport/register HTTP/1.1[0m" 200 -
+2020-01-31 11:35:31,517 INFO _internal.py: 122  * Restarting with stat
+2020-01-31 11:35:32,411 WARNING _internal.py: 122  * Debugger is active!
+2020-01-31 11:35:32,425 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-01-31 11:35:32,434 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-01-31 11:35:34,536 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:35:34] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:35:43,638 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:35:43] "[37mGET /passport/image_code?code_id=0bb313f7-d9fa-42fa-9173-dba15a30bbd6 HTTP/1.1[0m" 200 -
+2020-01-31 11:35:47,058 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:35:47] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:35:47,192 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:35:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:35:54,878 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:35:54] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:35:55,013 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:35:55] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:36:14,468 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:14] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:36:24,143 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:24] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:36:24,459 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,388 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET / HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,421 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,426 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,432 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,437 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,439 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,442 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,446 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,461 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,466 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,481 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,505 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,508 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-01-31 11:36:29,719 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:29] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-01-31 11:36:34,286 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:34] "[37mGET /passport/image_code?code_id=bd53edc2-323c-499c-b025-a40c99103aa3 HTTP/1.1[0m" 200 -
+2020-01-31 11:36:34,292 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:34] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+2020-01-31 11:36:58,202 INFO views.py: 86 002710
+2020-01-31 11:36:59,089 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:36:59] "[37mPOST /passport/sms_code HTTP/1.1[0m" 200 -
+2020-01-31 11:37:22,294 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:37:22] "[37mPOST /passport/register HTTP/1.1[0m" 200 -
+2020-01-31 11:37:22,323 INFO _internal.py: 122 127.0.0.1 - - [31/Jan/2020 11:37:22] "[37mGET / HTTP/1.1[0m" 200 -

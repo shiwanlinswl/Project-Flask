@@ -65,10 +65,25 @@ class User(BaseModel, db.Model):
     # news.user :当前新闻是哪个用户发布的
     news_list = db.relationship('News', backref='user', lazy='dynamic')
 
+    # def set_hash_password(self, password):
+    #     """
+    #     密码加密
+    #     :param password: 原密码
+    #     :return:
+    #     """
+    #     # 对未加密的密码进行加密
+    #     password = generate_password_hash(password)
+    #
+    #     # 将加密后的密码赋值给password_hash属性
+    #     self.password_hash = password
+
+    # 装饰的是get方法，获取时自动调用
     @property
     def password(self):
+        # 对密码进行保护，不允许外界获取密码
         raise AttributeError("当前属性不可读")
 
+    # 装饰的是set方法，赋值时自动调用
     @password.setter
     def password(self, value):
         self.password_hash = generate_password_hash(value)
