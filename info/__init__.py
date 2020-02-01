@@ -8,8 +8,11 @@ import logging
 import datetime
 from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
 from flask_session import Session
+from info.utils.common import do_filter_class
+
 
 # 只是申明db对象，并未做真是数据库初始化操作
+
 db = SQLAlchemy()
 
 # # type:StrictRedis 提前声明redis_store数据类型
@@ -81,6 +84,9 @@ def create_app(config_name):
         response.set_cookie("csrf_token", csrf_token)
         # 3.响应csrf_token到浏览器
         return response
+
+    # 添加自定义过滤器
+    app.add_template_filter(do_filter_class, "do_filter_class")
 
     # 5.借助Session调整flask.session的存储位置到redis中存储
     Session(app)
