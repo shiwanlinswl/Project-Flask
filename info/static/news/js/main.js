@@ -126,11 +126,14 @@ $(function () {
             data: JSON.stringify(params),
             contentType: 'application/json',
             dataType: 'json',
+            headers: {
+                "X-CSRFToken": getCookie("csrf_token")
+            },
             success: function (resp) {
                 // 登录成功，刷新界面
-                if (resp.errno == "0"){
+                if (resp.errno == "0") {
                     location.reload();
-                }else{
+                } else {
                     $("#login-password-err").html(resp.errmsg)
                     $("#login-password-err").show()
                 }
@@ -182,6 +185,9 @@ $(function () {
             type: "post",
             data: JSON.stringify(params),
             contentType: "application/json",
+            headers: {
+                "X-CSRFToken": getCookie("csrf_token")
+            },
             dataType: "json",
             success: function (resp) {
                 if (resp.errno == "0") {
@@ -249,6 +255,9 @@ function sendSMSCode() {
         data: params_json,
         contentType: "application/json",
         dateType: "json",
+        headers: {
+            "X-CSRFToken": getCookie("csrf_token")
+        },
         success: function (resp) {
             if (resp.errno == "0") {
                 // 倒计时60秒，60秒后允许用户再次点击发送短信验证码的按钮
@@ -320,4 +329,23 @@ function generateUUID() {
         return (c == 'x' ? r : (r & 0x3 | 0x8)).toString(16);
     });
     return uuid;
+}
+
+function login_out() {
+    $.ajax({
+        url: "/passport/login_out",
+        type: "post",
+        headers: {
+            "X-CSRFToken": getCookie("csrf_token")
+        },
+        success: function (resp) {
+            if (resp.errno == "0") {
+                // 刷新当前界面
+                location.reload()
+            } else {
+
+            }
+
+        }
+    })
 }

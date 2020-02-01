@@ -12,6 +12,18 @@ from info.lib.yuntongxun.sms import CCP
 from info import db
 
 
+@passport_bp.route("/login_out", methods=["POST"])
+def login_out():
+    """
+    退出登录
+    :return:
+    """
+    session.pop("user_id")
+    session.pop("nick_name")
+    session.pop("mobile")
+    return jsonify(errno=RET.OK, errmsg="退出登录成功")
+
+
 @passport_bp.route("/login", methods=["POST"])
 def login():
     """
