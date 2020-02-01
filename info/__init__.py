@@ -70,7 +70,7 @@ def create_app(config_name):
     # CSRFProtect(app)
 
     # 5.借助Session调整flask.session的存储位置到redis中存储
-    # Session(app)
+    Session(app)
 
     # 防止出现循环导入问题,在工厂方法中延迟导入蓝图对象
     from info.modules.index import index_bp

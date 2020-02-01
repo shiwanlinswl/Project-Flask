@@ -12,6 +12,56 @@ from info.lib.yuntongxun.sms import CCP
 from info import db
 
 
+@passport_bp.route("/login", methods=["POST"])
+def login():
+    """
+    登录
+    :return:
+    """
+    # 1.获取参数
+    json_dict = request.json
+    mobile = json_dict.get("mobile")
+    password = json_dict.get("password")
+
+    # 2.校验参数
+    if not all([mobile, password]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
+    if not re.match("^1[3578][0-9]{9}$", mobile):
+        return jsonify(errno=RET.UNKOWNERR, errmsg="手机格式不正确")
+
+    # 3.逻辑处理
+    try:
+        query_user = User.query.filter(User.mobile == mobile).first()
+    except Exception as e:
+        current_app.logger(e)
+        return jsonify(errno=RET.DBERR, errmsg="数据库查询异常")
+
+    if not query_user:
+        return jsonify(errno=RET.DATAERR, errmsg="用户不存在")
+
+    if not query_user.check_password(password):
+        return jsonify(errno=RET.DATAERR, errmsg="密码输入错误")
+
+    # 记录用户状态
+    session["user_id"] = query_user.id
+    session["nick_name"] = query_user.nick_name
+    session["mobile"] = query_user.mobile
+
+    # 修改用户最后一次登录时间，并提交到数据库
+    query_user.last_login = datetime.now()
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="数据库提交异常")
+
+    # 4.响应数据
+    return jsonify(errno=RET.OK, errmsg="登录成功")
+
+
 # get请求地址 url="/passport/image_code?code_id=UUID"
 @passport_bp.route("/image_code")
 def get_image_code():
@@ -144,6 +194,7 @@ def register():
     user.password = mobile
     # 记录最后一次登录时间
     user.last_login = datetime.now()
+
     # 密码加密处理,动态添加password属性
     user.password = password
 
