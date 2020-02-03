@@ -16,7 +16,7 @@ def news_list():
     # 1.获取参数
     args_dict = request.args
     cid = args_dict.get("cid")
-    p = args_dict.get("p", 1)
+    p = args_dict.get("page", 1)
     per_page = args_dict.get("per_page", 10)
 
     # 2.校验参数

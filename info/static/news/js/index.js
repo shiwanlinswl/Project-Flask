@@ -1,10 +1,12 @@
 var currentCid = 1; // 当前分类 id
 var cur_page = 1; // 当前页
 var total_page = 1;  // 总页数
-var data_querying = true;   // 是否正在向后台获取数据
+var data_querying = false;   // 是否正在向后台获取数据
 
 
 $(function () {
+    // 首次进入，加载新闻列表
+    updateNewsData()
     // 首页分类切换
     $('.menu li').click(function () {
         var clickCid = $(this).attr('data-cid')
@@ -41,10 +43,52 @@ $(function () {
 
         if ((canScrollHeight - nowScroll) < 100) {
             // TODO 判断页数，去更新新闻数据
+            if (!data_querying){
+                data_querying = true;
+                if (cur_page <= total_page){
+                    updateNewsData()
+                }else{
+                    data_querying = false;
+                }
+            }
         }
     })
 })
 
+
 function updateNewsData() {
     // TODO 更新新闻数据
+    var params = {
+        "page": cur_page,
+        "cid": currentCid,
+        'per_page': 10
+    }
+    $.get("/news_list", params, function (resp) {
+
+        if (resp) {
+
+            if (cur_page == 1){
+                // 只有第一页时，才清空原有占位数据
+                $(".list_con").html('')
+            }
+            data_querying = false
+            total_page = resp.data.total_page
+            cur_page += 1
+
+            // 显示数据
+            for (var i=0;i<resp.data.news_list.length;i++) {
+                var news = resp.data.news_list[i]
+                var content = '<li>'
+                content += '<a href="#" class="news_pic fl"><img src="' + news.index_image_url + '?imageView2/1/w/170/h/170"></a>'
+                content += '<a href="#" class="news_title fl">' + news.title + '</a>'
+                content += '<a href="#" class="news_detail fl">' + news.digest + '</a>'
+                content += '<div class="author_info fl">'
+                content += '<div class="source fl">来源：' + news.source + '</div>'
+                content += '<div class="time fl">' + news.create_time + '</div>'
+                content += '</div>'
+                content += '</li>'
+                $(".list_con").append(content)
+            }
+        }
+    })
 }
