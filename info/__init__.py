@@ -94,10 +94,13 @@ def create_app(config_name):
     # 防止出现循环导入问题,在工厂方法中延迟导入蓝图对象
     from info.modules.index import index_bp
     from info.modules.passport import passport_bp
+    from info.modules.news import news_bp
 
     # 注册index蓝图对象
     app.register_blueprint(index_bp)
     # 注册登录模块
     app.register_blueprint(passport_bp)
+    # 新闻模块
+    app.register_blueprint(news_bp)
 
     return app
