@@ -9,6 +9,7 @@ def news_detail(news_id):
     新闻详情展示
     :return:
     """
-    return render_template("news/detail.html")
+    data = {}
+    return render_template("news/detail.html", data=data)
 
 
