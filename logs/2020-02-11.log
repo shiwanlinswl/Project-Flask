@@ -161,3 +161,6 @@
 2020-02-11 22:03:15,688 INFO _internal.py: 122 127.0.0.1 - - [11/Feb/2020 22:03:15] "[37mGET /news_list?page=1&cid=2&per_page=10 HTTP/1.1[0m" 200 -
 2020-02-11 22:03:19,752 INFO _internal.py: 122 127.0.0.1 - - [11/Feb/2020 22:03:19] "[37mGET /news_list?page=1&cid=3&per_page=10 HTTP/1.1[0m" 200 -
 2020-02-11 22:03:26,773 INFO _internal.py: 122 127.0.0.1 - - [11/Feb/2020 22:03:26] "[37mGET /news_list?page=1&cid=4&per_page=10 HTTP/1.1[0m" 200 -
+2020-02-11 22:05:06,098 INFO _internal.py: 122 127.0.0.1 - - [11/Feb/2020 22:05:06] "[37mGET / HTTP/1.1[0m" 200 -
+2020-02-11 22:05:13,681 INFO _internal.py: 122 127.0.0.1 - - [11/Feb/2020 22:05:13] "[37mGET /news_list?page=1&cid=1&per_page=10 HTTP/1.1[0m" 200 -
+2020-02-11 22:05:14,681 INFO _internal.py: 122 127.0.0.1 - - [11/Feb/2020 22:05:14] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -

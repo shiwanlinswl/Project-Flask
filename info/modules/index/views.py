@@ -1,8 +1,9 @@
 from info import constants
 from info.models import User, News, Category
 from info.response_code import RET
+from info.utils.common import get_user_data
 from . import index_bp
-from flask import render_template, current_app
+from flask import render_template, current_app, g
 from flask import jsonify, request
 from flask import session
 
@@ -61,6 +62,7 @@ def news_list():
 
 
 @index_bp.route('/')
+@get_user_data
 def index():
     """
     新闻首页展示
@@ -68,15 +70,9 @@ def index():
     """
     # -----1.用户登录后，显示用户信息-----
 
-    # 从session中获取用户id
-    user_id = session.get("user_id")
-    user = None
-    if user_id:
-        try:
-            user = User.query.get(user_id)
-        except Exception as e:
-            current_app.logger(e)
-            return jsonify(errno=RET.DBERR, errmsg="数据库查询操作异常")
+    # 从g对象中获取用户对象
+    user = g.user
+
     """
     if user:
         user_dict = user.to_dict()
