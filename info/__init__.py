@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, g, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import CSRFProtect
 from flask_wtf.csrf import generate_csrf
@@ -8,8 +8,7 @@ import logging
 import datetime
 from logging.handlers import RotatingFileHandler, TimedRotatingFileHandler
 from flask_session import Session
-from info.utils.common import do_filter_class
-
+from info.utils.common import do_filter_class, get_user_data
 
 # 只是申明db对象，并未做真是数据库初始化操作
 
@@ -87,6 +86,16 @@ def create_app(config_name):
 
     # 添加自定义过滤器
     app.add_template_filter(do_filter_class, "do_filter_class")
+
+    # 统一返回404错误页面信息
+    @app.errorhandler(404)
+    @get_user_data
+    def error_404_handler(_):
+        user = g.user
+        data = {
+            "user_info": user.to_dict() if user else None,
+        }
+        return render_template("news/404.html", data=data)
 
     # 5.借助Session调整flask.session的存储位置到redis中存储
     Session(app)
