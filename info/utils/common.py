@@ -1,5 +1,6 @@
 from flask import session, current_app, jsonify, g
 from info.response_code import RET
+import functools
 
 
 # 自定义过滤器方法
@@ -16,6 +17,7 @@ def do_filter_class(index):
 
 # 自定义获取用户数据装饰器
 def get_user_data(view_func):
+    @functools.wraps(view_func)
     def wrapper(*args, **kwargs):
         # 从session中获取用户id
         user_id = session.get("user_id")

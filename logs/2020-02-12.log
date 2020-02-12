@@ -192,3 +192,28 @@
 2020-02-12 13:11:14,552 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:11:14] "[37mGET /news/149 HTTP/1.1[0m" 200 -
 2020-02-12 13:11:49,800 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:11:49] "[37mGET / HTTP/1.1[0m" 200 -
 2020-02-12 13:11:55,940 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:11:55] "[37mGET /news_list?page=1&cid=1&per_page=10 HTTP/1.1[0m" 200 -
+2020-02-12 13:16:57,691 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\utils\\common.py', reloading
+2020-02-12 13:16:57,840 INFO _internal.py: 122  * Restarting with stat
+2020-02-12 13:16:58,955 WARNING _internal.py: 122  * Debugger is active!
+2020-02-12 13:16:58,969 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-12 13:16:58,978 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-02-12 13:25:26,181 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\utils\\common.py', reloading
+2020-02-12 13:25:26,290 INFO _internal.py: 122  * Restarting with stat
+2020-02-12 13:25:27,433 WARNING _internal.py: 122  * Debugger is active!
+2020-02-12 13:25:27,450 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-12 13:25:27,464 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-02-12 13:27:51,059 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\utils\\common.py', reloading
+2020-02-12 13:27:51,157 INFO _internal.py: 122  * Restarting with stat
+2020-02-12 13:27:52,084 WARNING _internal.py: 122  * Debugger is active!
+2020-02-12 13:27:52,097 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-12 13:27:52,106 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-02-12 13:29:09,674 INFO _internal.py: 122  * Restarting with stat
+2020-02-12 13:29:10,699 WARNING _internal.py: 122  * Debugger is active!
+2020-02-12 13:29:10,712 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-12 13:29:10,723 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-02-12 13:32:16,372 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:32:16] "[37mGET / HTTP/1.1[0m" 200 -
+2020-02-12 13:32:25,023 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:32:25] "[37mGET / HTTP/1.1[0m" 200 -
+2020-02-12 13:32:32,384 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:32:32] "[37mGET /news_list?page=1&cid=1&per_page=10 HTTP/1.1[0m" 200 -
+2020-02-12 13:32:35,259 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:32:35] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-02-12 13:32:41,969 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:32:41] "[37mGET /news_list?page=1&cid=2&per_page=10 HTTP/1.1[0m" 200 -
+2020-02-12 13:32:46,483 INFO _internal.py: 122 127.0.0.1 - - [12/Feb/2020 13:32:46] "[37mGET /news/149 HTTP/1.1[0m" 200 -
