@@ -13,6 +13,8 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = "mysql://root:shi930718@93.179.119.153:3306/info22"
     # 开启数据库跟踪模式
     SQLALCHEMY_TRACK_MODIFICATIONS = True
+    # 开启数据库自动提交
+    SQLALCHEMY_COMMIT_ON_TEARDOWN = True
 
     JOBS = [{
         'id': 'job1',
