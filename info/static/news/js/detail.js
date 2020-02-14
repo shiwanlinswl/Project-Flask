@@ -5,7 +5,8 @@ function getCookie(name) {
 
 
 $(function(){
-
+    // 更新评论条数
+    updateCommentCount()
     // 打开登录框
     $('.comment_form_logout').click(function () {
         $('.login_form_con').show();
@@ -132,6 +133,8 @@ $(function(){
                     $('.comment_sub').blur();
                     // 清空输入框内容
                     $(".comment_input").val("")
+                    // 更新评论条数
+                    updateCommentCount()
                 }else {
                     alert(resp.errmsg)
                 }
@@ -229,6 +232,8 @@ $(function(){
                         $this.prev().val('')
                         // 关闭
                         $this.parent().hide()
+                        // 更新评论条数
+                        updateCommentCount()
                     }else {
                         alert(resp.errmsg)
                     }
@@ -247,3 +252,11 @@ $(function(){
 
     })
 })
+
+
+// 更新评论条数
+function updateCommentCount() {
+    var length = $(".comment_list").length
+    // 替换标签内容
+    $(".comment_count").html(length + "条评论")
+}
