@@ -1,9 +1,65 @@
 from info import constants, db
-from info.models import User, News
+from info.models import User, News, Comment
 from info.response_code import RET
 from info.utils.common import get_user_data
 from . import news_bp
 from flask import render_template, current_app, session, jsonify, g, abort, request
+
+
+@news_bp.route('/news_comment', methods=["POST"])
+@get_user_data
+def news_comment():
+    """
+    新闻评论--主&子评论
+    :return:
+    """
+    """
+    1.获取参数：user, news_id, content, parent_id
+    2.参数校验
+    3.逻辑处理
+        3.1 查询新闻对象
+        3.2 创建评论评论对象并对属性赋值
+        3.3 保存数据到数据库
+    4.返回数据
+    """
+    json_dict = request.json
+    parent_id = json_dict.get("parent_id")
+    content = json_dict.get("comment")
+    news_id = json_dict.get("news_id")
+    user = g.user
+
+    if not all([content, news_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询新闻对象异常")
+
+    if not news:
+        return jsonify(errno=RET.NODATA, errmsg="新闻数据不存在")
+
+    # 创建评论对象
+    comment = Comment()
+    comment.news_id = news.id
+    comment.content = content
+    comment.user_id = user.id
+
+    # parent_id作为判断子评论和主评论的判断依据
+    if parent_id:
+        # 有parent_id:表示是子评论
+        comment.parent_id = parent_id
+
+    try:
+        db.session.add(comment)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="评论保存失败")
+
+    return jsonify(errno=RET.OK, errmsg="评论成功", data=comment.to_dict())
 
 
 @news_bp.route('/news_collect', methods=["POST"])
