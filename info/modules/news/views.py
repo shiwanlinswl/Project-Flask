@@ -1,9 +1,88 @@
 from info import constants, db
-from info.models import User, News, Comment
+from info.models import User, News, Comment, CommentLike
 from info.response_code import RET
 from info.utils.common import get_user_data
 from . import news_bp
 from flask import render_template, current_app, session, jsonify, g, abort, request
+
+
+@news_bp.route('/comment_like', methods=["POST"])
+@get_user_data
+def comment_like():
+    """
+    评论点赞&取消点赞
+    :return:
+    """
+    """
+        1.获取参数：user, comment_id, action行为：点赞(add)/取消点赞(remove)
+        2.参数校验
+        3.逻辑处理
+            3.1.根据comment_id查询新闻对象
+            3.2.点赞：创建comment_like对象，并为属性赋值，保存到数据库
+                ---对评论对象的comment_count + 1 
+            3.3.取消点赞：移除comment_like对象，保存到数据库
+                ---对评论对象的comment_count - 1 
+        4.返回数据
+    """
+    user = g.user
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
+
+    json_dict = request.json
+    comment_id = json_dict.get("comment_id")
+    action = json_dict.get("action")
+
+    if not all([comment_id, action]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
+    if action not in ["add", "remove"]:
+        return jsonify(errno=RET.DATAERR, errmsg="参数类型错误")
+
+    try:
+        comment = Comment.query.get(comment_id)
+    except Exception as e:
+        current_app.logger(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询新闻对象异常")
+
+    if not comment:
+        return jsonify(errno=RET.NODATA, errmsg="评论不存在")
+
+    # 根据行为参数判断点赞/取消点赞
+    if action == "add":
+        # 先查询评论点赞对象是否存在
+        try:
+            comment_like_obj = CommentLike.query.filter(CommentLike.comment_id == comment_id,
+                                                        CommentLike.user_id == user.id).first()
+        except Exception as e:
+            current_app.logger(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询评论点赞异常")
+
+        # 不存在才可以点赞
+        if not comment_like_obj:
+            comment_like = CommentLike()
+            comment_like.comment_id = comment.id
+            comment_like.user_id = user.id
+            comment.like_count += 1
+            db.session.add(comment_like)
+    else:
+        try:
+            comment_like_obj = CommentLike.query.filter(CommentLike.comment_id == comment_id,
+                                                        CommentLike.user_id == user.id).first()
+        except Exception as e:
+            current_app.logger(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询评论点赞异常")
+        if comment_like_obj:
+            db.session.delete(comment_like_obj)
+            comment.like_count -= 1
+
+    # 统一提交数据库操作
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="点赞/取消点赞提交数据库失败")
+    return jsonify(errno=RET.OK, errmsg="OK")
 
 
 @news_bp.route('/news_comment', methods=["POST"])
