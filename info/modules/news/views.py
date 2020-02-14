@@ -22,11 +22,15 @@ def news_comment():
         3.3 保存数据到数据库
     4.返回数据
     """
+
+    user = g.user
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
+
     json_dict = request.json
     parent_id = json_dict.get("parent_id")
     content = json_dict.get("comment")
     news_id = json_dict.get("news_id")
-    user = g.user
 
     if not all([content, news_id]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
@@ -70,17 +74,17 @@ def news_collect():
     :return:
     """
     # 1.获取参数news_id,action(值为collect,cancel_collect)
+    user = g.user
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
+
     json_dict = request.json
     news_id = json_dict.get("news_id")
     action = json_dict.get("action")
-    user = g.user
 
     # 2.参数校验
     if not all([news_id, action]):
         return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
-
-    if not user:
-        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
 
     # 3.处理业务逻辑
     # 3.1 判断action参数
@@ -168,11 +172,25 @@ def news_detail(news_id):
         if news_obj in user.collection_news:
             is_collected = True
 
+    # -----5.查询评论列表-----
+    try:
+        comment_list = Comment.query.filter(Comment.news_id == news_id).order_by(Comment.create_time.desc()).all()
+    except Exception as e:
+        current_app.logger(e)
+        return jsonify(errno=RET.DBERR, errmsg="查询新闻列表异常")
+
+    comment_dict_list = []
+    # 新闻列表对象转字典
+    for comment in comment_list if comment_list else None:
+        comment_dict = comment.to_dict()
+        comment_dict_list.append(comment_dict)
+
     data = {
         "user_info": user_dict,
         "click_news_list": news_dict_list,
         "news": news_dict,
-        "is_collected": is_collected
+        "is_collected": is_collected,
+        "comments": comment_dict_list
     }
 
     return render_template("news/detail.html", data=data)

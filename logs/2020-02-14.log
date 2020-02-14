@@ -99,3 +99,104 @@
 2020-02-14 17:59:18,575 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 17:59:18] "[37mPOST /news/news_comment HTTP/1.1[0m" 200 -
 2020-02-14 17:59:27,307 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 17:59:27] "[37mGET /news/149 HTTP/1.1[0m" 200 -
 2020-02-14 17:59:27,986 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 17:59:27] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-02-14 22:28:20,619 INFO _internal.py: 122  * Restarting with stat
+2020-02-14 22:28:21,521 WARNING _internal.py: 122  * Debugger is active!
+2020-02-14 22:28:21,534 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-14 22:28:21,544 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-02-14 22:28:38,803 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:38] "[37mGET / HTTP/1.1[0m" 200 -
+2020-02-14 22:28:39,241 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:39] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-02-14 22:28:40,176 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:40] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-02-14 22:28:40,585 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:40] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-02-14 22:28:41,443 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:41] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-02-14 22:28:41,855 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:41] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-02-14 22:28:42,263 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:42] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-02-14 22:28:42,671 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:42] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-02-14 22:28:43,075 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:43] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-02-14 22:28:43,483 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:43] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-02-14 22:28:43,900 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:43] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:28:54,188 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:28:54] "[37mGET /news_list?page=1&cid=1&per_page=10 HTTP/1.1[0m" 200 -
+2020-02-14 22:29:09,033 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:09] "[37mGET / HTTP/1.1[0m" 200 -
+2020-02-14 22:29:10,352 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:10] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-02-14 22:29:10,774 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:10] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-02-14 22:29:12,079 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:12] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-02-14 22:29:12,490 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:12] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-02-14 22:29:12,902 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:12] "[37mGET /static/news/js/index.js HTTP/1.1[0m" 200 -
+2020-02-14 22:29:13,311 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:13] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-02-14 22:29:14,603 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:14] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-02-14 22:29:15,014 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:15] "[37mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 200 -
+2020-02-14 22:29:21,129 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:21] "[37mGET /news_list?page=1&cid=1&per_page=10 HTTP/1.1[0m" 200 -
+2020-02-14 22:29:21,537 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:21] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:29:21,949 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:21] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-02-14 22:29:23,244 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:23] "[37mGET /static/news/images/person.png HTTP/1.1[0m" 200 -
+2020-02-14 22:29:23,760 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:23] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-02-14 22:29:24,186 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-02-14 22:29:57,378 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:57] "[37mGET /news/149 HTTP/1.1[0m" 200 -
+2020-02-14 22:29:57,838 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:57] "[37mGET /static/news/js/detail.js HTTP/1.1[0m" 200 -
+2020-02-14 22:29:58,246 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:58] "[37mGET /static/news/images/cat.jpg HTTP/1.1[0m" 200 -
+2020-02-14 22:29:59,536 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:59] "[37mGET /static/news/images/user_pic.png HTTP/1.1[0m" 200 -
+2020-02-14 22:29:59,958 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:29:59] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:30:00,368 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:30:00] "[37mGET /static/news/images/collect_icons.png HTTP/1.1[0m" 200 -
+2020-02-14 22:30:01,198 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:30:01] "[37mGET /static/news/images/zan_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:30:02,030 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:30:02] "[37mGET /static/news/images/reply_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:30:03,267 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:30:03] "[37mGET /static/news/images/focus_icons.png HTTP/1.1[0m" 200 -
+2020-02-14 22:30:16,715 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:30:16] "[37mPOST /news/news_comment HTTP/1.1[0m" 200 -
+2020-02-14 22:33:51,945 INFO _internal.py: 122  * Restarting with stat
+2020-02-14 22:33:52,876 WARNING _internal.py: 122  * Debugger is active!
+2020-02-14 22:33:52,889 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-14 22:33:52,898 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-02-14 22:34:35,119 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:35] "[37mGET /news/149 HTTP/1.1[0m" 200 -
+2020-02-14 22:34:35,503 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:35] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-02-14 22:34:35,852 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:35] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-02-14 22:34:36,206 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:36] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-02-14 22:34:36,557 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:36] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-02-14 22:34:36,907 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:36] "[37mGET /static/news/js/detail.js HTTP/1.1[0m" 200 -
+2020-02-14 22:34:37,262 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:37] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:38,013 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:38] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:38,374 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:38] "[37mGET /static/news/images/user_pic.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:38,726 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:38] "[37mGET /static/news/images/focus_icons.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:39,082 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:39] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:39,429 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:39] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:40,183 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:40] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:40,534 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:40] "[37mGET /static/news/images/collect_icons.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:40,884 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:40] "[37mGET /static/news/images/zan_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:41,238 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:41] "[37mGET /static/news/images/reply_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:41,589 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:41] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:34:41,953 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:41] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-02-14 22:34:59,583 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:34:59] "[1m[35mPOST /news/news_comment HTTP/1.1[0m" 500 -
+2020-02-14 22:35:50,409 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:35:50] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+2020-02-14 22:36:40,718 INFO _internal.py: 122  * Restarting with stat
+2020-02-14 22:36:41,638 WARNING _internal.py: 122  * Debugger is active!
+2020-02-14 22:36:41,652 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-14 22:36:41,661 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2020-02-14 22:37:04,495 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:04] "[37mGET /news/149 HTTP/1.1[0m" 200 -
+2020-02-14 22:37:05,510 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:05] "[37mGET /static/news/css/reset.css HTTP/1.1[0m" 200 -
+2020-02-14 22:37:05,911 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:05] "[37mGET /static/news/css/main.css HTTP/1.1[0m" 200 -
+2020-02-14 22:37:07,259 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:07] "[37mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 200 -
+2020-02-14 22:37:07,655 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:07] "[37mGET /static/news/js/main.js HTTP/1.1[0m" 200 -
+2020-02-14 22:37:08,974 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:08] "[37mGET /static/news/js/detail.js HTTP/1.1[0m" 200 -
+2020-02-14 22:37:09,395 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:09] "[37mGET /static/news/images/logo.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:09,827 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:09] "[37mGET /static/news/images/person01.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:10,255 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:10] "[37mGET /static/news/images/user_pic.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:10,692 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:10] "[37mGET /static/news/images/pic_code.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:11,112 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:11] "[37mGET /static/news/images/clock.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:11,523 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:11] "[37mGET /static/news/images/comment_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:11,919 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:11] "[37mGET /static/news/images/focus_icons.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:12,316 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:12] "[37mGET /static/news/images/collect_icons.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:12,719 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:12] "[37mGET /static/news/images/zan_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:13,124 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:13] "[37mGET /static/news/images/reply_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:13,564 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:13] "[37mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:14,006 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:14] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+2020-02-14 22:37:40,278 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:40] "[37mPOST /news/news_collect HTTP/1.1[0m" 200 -
+2020-02-14 22:37:40,723 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:40] "[37mGET /static/news/images/shutoff.png HTTP/1.1[0m" 200 -
+2020-02-14 22:37:52,663 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:37:52] "[37mPOST /news/news_comment HTTP/1.1[0m" 200 -
+2020-02-14 22:38:04,263 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:38:04] "[37mPOST /news/news_comment HTTP/1.1[0m" 200 -
+2020-02-14 22:38:13,588 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:38:13] "[37mPOST /news/news_comment HTTP/1.1[0m" 200 -
+2020-02-14 22:38:47,639 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:38:47] "[37mPOST /passport/login HTTP/1.1[0m" 200 -
+2020-02-14 22:39:12,184 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:39:12] "[37mGET /news/149 HTTP/1.1[0m" 200 -
+2020-02-14 22:39:12,623 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:39:12] "[37mGET /static/news/images/cat.jpg HTTP/1.1[0m" 200 -
+2020-02-14 22:39:52,847 INFO _internal.py: 122 127.0.0.1 - - [14/Feb/2020 22:39:52] "[37mPOST /news/news_comment HTTP/1.1[0m" 200 -
+2020-02-14 22:42:08,001 INFO _internal.py: 122  * Detected change in 'D:\\Code\\informations\\info\\modules\\news\\views.py', reloading
+2020-02-14 22:42:08,100 INFO _internal.py: 122  * Restarting with stat
+2020-02-14 22:42:09,027 WARNING _internal.py: 122  * Debugger is active!
+2020-02-14 22:42:09,041 INFO _internal.py: 122  * Debugger PIN: 217-926-943
+2020-02-14 22:42:09,050 INFO _internal.py: 122  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
