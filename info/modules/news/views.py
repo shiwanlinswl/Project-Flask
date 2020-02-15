@@ -258,10 +258,34 @@ def news_detail(news_id):
         current_app.logger(e)
         return jsonify(errno=RET.DBERR, errmsg="查询新闻列表异常")
 
+    # -----6.查询评论点赞-----
+    # 定义全局变量：防止出现用户未登录报错
+    comment_like_list = []
+    # 用户登录后才显示
+    if user:
+        # 获取当前新闻的评论id列表
+        comments = [comment.id for comment in comment_list]
+        try:
+            # 过滤出当前用户点过赞的新闻id
+            comment_like_id_obj_list = CommentLike.query.filter(CommentLike.comment_id.in_(comments),
+                                                                CommentLike.user_id == user.id).all()
+        except Exception as e:
+            current_app.logger(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询评论点赞异常")
+
+        # 获取当前用户点多赞的新闻id列表
+        comment_like_list = [comment_like_id_obj.comment_id for comment_like_id_obj in comment_like_id_obj_list]
+
     comment_dict_list = []
     # 新闻列表对象转字典
-    for comment in comment_list if comment_list else None:
+    for comment in comment_list if comment_list else []:
         comment_dict = comment.to_dict()
+
+        # 使用is_like属性标识是否点赞
+        comment_dict["is_like"] = False
+        if comment.id in comment_like_list:
+            comment_dict["is_like"] = True
+
         comment_dict_list.append(comment_dict)
 
     data = {
