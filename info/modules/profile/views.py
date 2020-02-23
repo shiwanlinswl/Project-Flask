@@ -4,6 +4,8 @@ from info import db
 from info.response_code import RET
 from . import profile_bp
 from info.utils.common import get_user_data
+from info.utils.pic_storage import pic_storage
+from info import constants
 
 
 @profile_bp.route("/pic_info", methods=["POST", "GET"])
@@ -15,6 +17,37 @@ def pic_info():
     """
     if request.method == "GET":
         return render_template("profile/user_pic_info.html")
+
+    # 获取文件参数
+    avatar = request.files.get("avatar")
+    avatar_data = avatar.read()
+
+    user = g.user
+
+    # 上传图片
+    try:
+        pic_name = pic_storage(avatar_data)
+    except Exception as e:
+        current_app.logger(e)
+        return jsonify(errno=RET.PARAMERR, errmsg="图片上传到平台异常")
+
+    if not pic_name:
+        return jsonify(errno=RET.DATAERR, errmsg="图片数据为空")
+
+    # 将图片保存到数据库
+    user.avatar_url = pic_name
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存图片到数据库失败")
+
+    # 返回图片完整url地址
+    full_avatar_url = constants.QINIU_DOMIN_PREFIX + pic_name
+
+    return jsonify(errno=RET.OK, errmsg="返回图片成功", data=full_avatar_url)
 
 
 @profile_bp.route("/base_info", methods=["POST", "GET"])
