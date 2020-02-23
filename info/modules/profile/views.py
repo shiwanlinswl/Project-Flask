@@ -1,11 +1,54 @@
 from flask import render_template, g, request, jsonify, session, current_app
 
 from info import db
+from info.models import User
 from info.response_code import RET
 from . import profile_bp
 from info.utils.common import get_user_data
 from info.utils.pic_storage import pic_storage
 from info import constants
+
+
+@profile_bp.route("/pass_info", methods=["POST", "GET"])
+@get_user_data
+def pass_info():
+    """
+    修改密码
+    :return:
+    """
+    if request.method == "GET":
+        return render_template("profile/user_pass_info.html")
+
+    # # type:User 申明数据类型
+    user = g.user  # type:User
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
+
+    # 获取参数
+    json_dict = request.json
+    old_password = json_dict.get("old_password")
+    new_password = json_dict.get("new_password")
+
+    if not all([old_password, new_password]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
+    if not user.check_password(old_password):
+        return jsonify(errno=RET.PWDERR, errmsg="旧密码输入错误")
+
+    user.password = new_password
+
+    # 赋值新密码,此时触发setter方法，对密码加密
+    user.password = new_password
+
+    # 保存到数据库
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.errno(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存新密码异常")
+
+    return jsonify(errno=RET.OK, errmsg="OK")
 
 
 @profile_bp.route("/pic_info", methods=["POST", "GET"])
@@ -23,6 +66,8 @@ def pic_info():
     avatar_data = avatar.read()
 
     user = g.user
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登录")
 
     # 上传图片
     try:
