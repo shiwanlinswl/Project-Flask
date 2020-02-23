@@ -33,7 +33,7 @@ def pic_storage(data):
         # 抛出异常，让调用着可获取异常
         raise AttributeError("上传图片到平台失败")
 
-    return ret
+    return ret["key"]
 
 
 if __name__ == '__main__':

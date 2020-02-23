@@ -34,20 +34,25 @@ def pic_info():
     if not pic_name:
         return jsonify(errno=RET.DATAERR, errmsg="图片数据为空")
 
+    print(pic_name)
+
     # 将图片保存到数据库
     user.avatar_url = pic_name
 
     try:
         db.session.commit()
     except Exception as e:
-        current_app.logger(e)
+        current_app.logger.error(e)
         db.session.rollback()
         return jsonify(errno=RET.DBERR, errmsg="保存图片到数据库失败")
 
     # 返回图片完整url地址
     full_avatar_url = constants.QINIU_DOMIN_PREFIX + pic_name
 
-    return jsonify(errno=RET.OK, errmsg="返回图片成功", data=full_avatar_url)
+    data = {
+        "avatar_url": full_avatar_url
+    }
+    return jsonify(errno=RET.OK, errmsg="返回图片成功", data=data)
 
 
 @profile_bp.route("/base_info", methods=["POST", "GET"])
@@ -88,7 +93,7 @@ def user_base_info():
     try:
         db.session.commit()
     except Exception as e:
-        current_app.logger(e)
+        current_app.logger.errno(e)
         return jsonify(errno=RET.DBERR, errmsg="保存用户信息到数据库异常")
 
     return jsonify(errno=RET.OK, errmsg="OK")
