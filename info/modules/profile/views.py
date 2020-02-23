@@ -6,6 +6,17 @@ from . import profile_bp
 from info.utils.common import get_user_data
 
 
+@profile_bp.route("/pic_info", methods=["POST", "GET"])
+@get_user_data
+def pic_info():
+    """
+    用户头像
+    :return:
+    """
+    if request.method == "GET":
+        return render_template("profile/user_pic_info.html")
+
+
 @profile_bp.route("/base_info", methods=["POST", "GET"])
 @get_user_data
 def user_base_info():
