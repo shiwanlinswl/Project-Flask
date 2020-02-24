@@ -34,7 +34,8 @@ def news_list():
         return jsonify(errno=RET.PARAMERR, errmsg="参数类型错误")
 
     # 3.逻辑处理
-    filter_list = []
+    # News.status == 0 表示评审通过，才在新闻列表中展示
+    filter_list = [News.status == 0]
     if cid != 1:
         # 添加查询条件到列表，使用时解包即可（可添加多个）
         filter_list.append(News.category_id == cid)

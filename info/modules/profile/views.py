@@ -1,12 +1,89 @@
 from flask import render_template, g, request, jsonify, session, current_app
 
 from info import db
-from info.models import User
+from info.models import User, Category, News
 from info.response_code import RET
 from . import profile_bp
 from info.utils.common import get_user_data
 from info.utils.pic_storage import pic_storage
 from info import constants
+
+
+@profile_bp.route("/news_release", methods=["POST", "GET"])
+@get_user_data
+def news_release():
+    """
+    新闻发布
+    :return:
+    """
+    if request.method == "GET":
+        try:
+            categories = Category.query.all()
+        except Exception as e:
+            current_app.logger.errno(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询新闻分类异常")
+
+        category_list_dict = []
+        for category in categories if categories else []:
+            category_list_dict.append(category.to_dict())
+
+        # 移除最新分类
+        category_list_dict.pop(0)
+        data = {
+            "categories": category_list_dict
+        }
+        return render_template("profile/user_news_release.html", data=data)
+
+    form_dict = request.form
+    source = "个人发布"
+    title = form_dict.get("title")
+    category_id = form_dict.get("category_id")
+    digest = form_dict.get("digest")
+    content = form_dict.get("content")
+    index_image = request.files.get("index_image")
+    user = g.user
+
+    if not all([title, source, digest, content, index_image, category_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
+    if not user:
+        return jsonify(errno=RET.SESSIONERR, errmsg="用户未登陆")
+
+    try:
+        # 读取新闻主图片
+        index_image = index_image.read()
+    except Exception as e:
+        current_app.logger.errno(e)
+        return jsonify(errno=RET.DATAERR, errmsg="参数错误")
+
+    # 上传图片
+    try:
+        pic = pic_storage(index_image)
+    except Exception as e:
+        current_app.logger.errno(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="上传图片失败")
+
+    news = News()
+    news.title = title
+    news.digest = digest
+    news.source = source
+    news.content = content
+    news.index_image_url = constants.QINIU_DOMIN_PREFIX + pic
+    news.category_id = category_id
+    news.user_id = user.id
+    # 1代表待审核状态
+    news.status = 1
+
+    # 保存到数据库
+    try:
+        db.session.add(news)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.errno(e)
+        db.session.rollback()
+        return jsonify(errno=RET.DBERR, errmsg="保存发布新闻到数据库异常")
+
+    return jsonify(errno=RET.OK, errmsg="发布新闻成功")
 
 
 # url: http://127.0.0.1:5000/user/collection?p=xx&per_page=xx
