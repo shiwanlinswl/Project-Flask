@@ -9,6 +9,50 @@ from info.utils.pic_storage import pic_storage
 from info import constants
 
 
+@profile_bp.route("/news_list")
+@get_user_data
+def news_list():
+    """
+    发布新闻列表查询
+    :return:
+    """
+    user = g.user
+    # 页码
+    p = request.args.get("p", 1)
+
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.errno(e)
+        p = 1
+
+    items = []
+    current_page = 1
+    total_page = 1
+    if user:
+        try:
+            paginate = News.query.filter(News.user_id == user.id).order_by(News.create_time.desc()). \
+                paginate(p, constants.USER_NEWS_PAGE_MAX_COUNT, False)
+            items = paginate.items
+            current_page = paginate.page
+            total_page = paginate.pages
+        except Exception as e:
+            current_app.logger.errno(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询发布新闻列表异常")
+
+    news_list_dict = []
+    for news in items if items else []:
+        news_list_dict.append(news.to_dict())
+
+    data = {
+        "news_list": news_list_dict,
+        "current_page": current_page,
+        "total_page": total_page,
+    }
+
+    return render_template("profile/user_news_list.html", data=data)
+
+
 @profile_bp.route("/news_release", methods=["POST", "GET"])
 @get_user_data
 def news_release():
