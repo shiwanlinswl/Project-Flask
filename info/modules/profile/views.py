@@ -9,6 +9,53 @@ from info.utils.pic_storage import pic_storage
 from info import constants
 
 
+# url: http://127.0.0.1:5000/user/collection?p=xx&per_page=xx
+@profile_bp.route("/collection")
+@get_user_data
+def news_collection():
+    """
+    用户收藏
+    :return:
+    """
+    user = g.user
+    # 页码
+    p = request.args.get("p", 1)
+
+    try:
+        p = int(p)
+    except Exception as e:
+        current_app.logger.errno(e)
+        p = 1
+
+    # user.collection_news使用lazy="dynamic"修饰
+    # 1.如果真正用到数据：返回的是对象列表
+    # 2.如果只是查询，返回的是查询对象，可以调用paginate()方法
+    items = []
+    current_page = 1
+    total_page = 1
+    if user:
+        try:
+            paginate = user.collection_news.paginate(p, constants.USER_COLLECTION_MAX_NEWS, False)
+            items = paginate.items
+            current_page = paginate.page
+            total_page = paginate.pages
+        except Exception as e:
+            current_app.logger.errno(e)
+            return jsonify(errno=RET.DBERR, errmsg="查询用户收藏异常")
+
+    news_list_dict = []
+    for news in items:
+        news_list_dict.append(news.to_dict())
+
+    data = {
+        "collections": news_list_dict,
+        "current_page": current_page,
+        "total_page": total_page,
+    }
+
+    return render_template("profile/user_collection.html", data=data)
+
+
 @profile_bp.route("/pass_info", methods=["POST", "GET"])
 @get_user_data
 def pass_info():
