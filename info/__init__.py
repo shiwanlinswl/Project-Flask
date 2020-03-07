@@ -105,6 +105,7 @@ def create_app(config_name):
     from info.modules.passport import passport_bp
     from info.modules.news import news_bp
     from info.modules.profile import profile_bp
+    from info.modules.admin import admin_bp
 
     # 注册index蓝图对象
     app.register_blueprint(index_bp)
@@ -114,5 +115,7 @@ def create_app(config_name):
     app.register_blueprint(news_bp)
     # 个人中心模块
     app.register_blueprint(profile_bp)
+    # 管理员模块
+    app.register_blueprint(admin_bp)
 
     return app

@@ -50,6 +50,7 @@ def createsuperuser(name, password):
         print(e)
         db.session.rollback()
 
+
 if __name__ == '__main__':
     # 使用manage对象启动flask项目
     # print(app.url_map)
