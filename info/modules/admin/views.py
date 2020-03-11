@@ -1,17 +1,25 @@
-from flask import request, render_template, current_app, jsonify, session, redirect, url_for
+from flask import request, render_template, current_app, jsonify, session, redirect, url_for, g
 
+from info.utils.common import get_user_data
 from info.models import User
 from info.response_code import RET
 from . import admin_bp
 
 
 @admin_bp.route("/")
+@get_user_data
 def admin_index():
     """
     管理员首页
     :return:
     """
-    return render_template("admin/index.html")
+    # 获取登录的管理员用户对象
+    admin_user = g.user
+
+    data = {
+        "user": admin_user.to_dict() if admin_user else None
+    }
+    return render_template("admin/index.html", data=data)
 
 
 @admin_bp.route("/login", methods=["POST", "GET"])

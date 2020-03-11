@@ -23,7 +23,8 @@ def login_out():
     session.pop("mobile", None)
 
     # 注意：退出登录也要请求is_admin,防止被普通用户使用
-    session.pop("is_admin", None)
+    # 只有管理员用户有is_admin, 普通用户给''
+    session.pop("is_admin", '')
 
     return jsonify(errno=RET.OK, errmsg="退出登录成功")
 
