@@ -21,6 +21,10 @@ def login_out():
     session.pop("user_id", None)
     session.pop("nick_name", None)
     session.pop("mobile", None)
+
+    # 注意：退出登录也要请求is_admin,防止被普通用户使用
+    session.pop("is_admin", None)
+
     return jsonify(errno=RET.OK, errmsg="退出登录成功")
 
 

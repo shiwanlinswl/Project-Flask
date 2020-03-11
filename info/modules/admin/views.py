@@ -21,7 +21,13 @@ def admin_login():
     :return:
     """
     if request.method == "GET":
-        return render_template("admin/login.html")
+        # 优化:访问admin/login 接口，如果用户已登录，直接重定向到admin/ 首页
+        user_id = session.get("user_id")
+        is_admin = session.get("is_admin")
+        if user_id and is_admin:
+            return redirect(url_for("admin.admin_index"))
+        else:
+            return render_template("admin/login.html")
 
     username = request.form.get("username")
     password = request.form.get("password")
