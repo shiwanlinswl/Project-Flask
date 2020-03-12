@@ -2,10 +2,47 @@ import time
 from datetime import datetime, timedelta
 from flask import request, render_template, current_app, jsonify, session, redirect, url_for, g
 
+from info import constants
 from info.utils.common import get_user_data
 from info.models import User
 from info.response_code import RET
 from . import admin_bp
+
+
+@admin_bp.route('/user_list')
+def user_list():
+    """获取用户列表"""
+
+    # 获取参数
+    page = request.args.get("p", 1)
+    try:
+        page = int(page)
+    except Exception as e:
+        current_app.logger.error(e)
+        page = 1
+
+    # 设置变量默认值
+    users = []
+    current_page = 1
+    total_page = 1
+
+    # 查询数据
+    try:
+        paginate = User.query.filter(User.is_admin == False).order_by(User.last_login.desc()).paginate(page, constants.ADMIN_USER_PAGE_MAX_COUNT, False)
+        users = paginate.items
+        current_page = paginate.page
+        total_page = paginate.pages
+    except Exception as e:
+        current_app.logger.error(e)
+
+    # 将模型列表转成字典列表
+    users_list = []
+    for user in users:
+        users_list.append(user.to_admin_dict())
+
+    context = {"total_page": total_page, "current_page": current_page, "users": users_list}
+    return render_template('admin/user_list.html',
+                           data=context)
 
 
 @admin_bp.route('/user_count')
