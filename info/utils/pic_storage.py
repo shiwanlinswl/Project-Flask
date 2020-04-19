@@ -3,7 +3,7 @@ import qiniu
 access_key = "KP1RLxS4sxzg9x2MGUeqTYX3jcOeYCQGtxgg7x20"
 secret_key = "VfwsLS0-A-9W9iNFNotuef5OmPyW1dhnxr6PwKf4"
 # 上传图片的空间名称
-bucket_name = "shiwanlinzt"
+bucket_name = "shiguanlin"
 
 
 def pic_storage(data):
